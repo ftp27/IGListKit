@@ -550,7 +550,7 @@ static void adjustZIndexForAttributes(UICollectionViewLayoutAttributes *attribut
                 
                 
                 // if newlining, always append line spacing unless its the very first item of the section
-                if (item > 0) {
+                if (item > 0 || section > 0) {
                     itemCoordInScrollDirection += lineSpacing;
                 }
             }
